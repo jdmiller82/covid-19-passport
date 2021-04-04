@@ -6,4 +6,4 @@ This project uses pug templates and sass for styles. There is no javascript, tho
 This project uses codekit to compile everything into a build folder, but you should be able to use your preferred way of compiling and deoplying to your server.
 
 Example can be found here:
-[Covid-19 Vaccine Passport](miller.gs/c19vax/)
+[Covid-19 Vaccine Passport](https://miller.gs/c19vax/)
