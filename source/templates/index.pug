@@ -1,0 +1,44 @@
+extends ../partials/_global
+
+append vars
+  - var headerClass = '';
+  - var contentClass = 'content';
+  - var footerClass = '';
+
+append body-content
+
+  div(class='person-deets')
+    div(class='qr-code')
+      //- insert your QR code here. you could have it link back to your index page, or to an image of your actual vaccine card
+      //- Use whatever QR generator you want, I found this one worked well enough: https://www.qr-code-generator.com
+      //- You might need to edit the fills for your QR code so that it is white with a transparent background.
+      img(src='assets/images/qrcode.svg')
+    div(class='vaccinated-individual')
+      label Vaccinated Individual
+      h2 Your name
+
+  div(class='dose')
+    label 1#[span st] Dose COVID-19
+    h3 Moderna #[span 012A21A]
+
+    div(class='two-col')
+      div(class='col')
+        label Date
+        p 03/15/21
+      div(class='col')
+        label Clinic Site
+        p My Clinic
+
+  hr
+
+  div(class='dose')
+    label 2#[span nd] Dose COVID-19
+    h3 Moderna #[span 012A21A]
+
+    div(class='two-col')
+      div(class='col')
+        label Date
+        p 04/15/21
+      div(class='col')
+        label Clinic Site
+        p My Clinic

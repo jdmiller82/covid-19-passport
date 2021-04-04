@@ -1,0 +1,114 @@
+// Public Sans
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;500&display=swap');
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 0;
+  min-height: calc(100vh - 4rem);
+  background: rgb(0,107,255);
+  background: linear-gradient(45deg, rgba(0,107,255,1) 0%, rgba(0,37,138,1) 100%);
+  color: white;
+  font-family: 'Public Sans', sans-serif;
+}
+
+header {
+  width: calc(100vw - 4rem);
+
+  h1 {
+    margin: 0 0 2rem;
+    font-weight: 400;
+    font-size: 1.25rem
+  }
+}
+
+footer {
+  width: calc(100vw - 4rem);
+
+  .hhs-cdc {
+    display: flex;
+    justify-content: center;
+
+    img {
+      // flex: 1;
+      width: 10.75rem;
+      height: 3.75rem;
+    }
+  }
+}
+
+.content {
+  width: calc(100vw - 4rem);
+  flex: 1;
+
+  h2 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 2.125rem;
+  }
+
+  h3 {
+    margin: 0 0 1rem;
+    font-weight: 100;
+    font-size: 2.125rem;
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 1rem;
+
+    span {
+      vertical-align: super;
+      font-size: 0.65rem;
+    }
+  }
+
+  hr {
+    margin: 0 0 2rem;
+    height: 1px;
+    background-color: white;
+    color: white;
+    border: none;
+  }
+
+  .person-deets {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .qr-code {
+      margin-right: 2rem;
+
+      img {
+        width: 5rem;
+        height: auto;
+      }
+    }
+  }
+  .dose {
+    margin-bottom: 2rem;
+
+    .two-col {
+      display: flex;
+
+      .col {
+        width: 50vw;
+      }
+    }
+  }
+}

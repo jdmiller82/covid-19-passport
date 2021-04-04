@@ -1,0 +1,16 @@
+doctype html
+html(lang='en' class='no-js')
+  block vars
+    - var headerClass = '';
+    - var contentClass = '';
+    - var footerClass = '';
+  
+  include _head
+  
+  body
+    include _header
+    include _content
+    include _footer
+  
+  //- Main Application JS
+  script(src='/assets/scripts/app-min.js')
